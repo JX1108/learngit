@@ -1,0 +1,24 @@
+
+*{
+  text-align:center;
+  font-famliy:arial;
+  
+}
+h1 {
+  font-size:32px;
+  background-color:orange;
+  border:1px solid black;
+}
+h3{
+  text-decoration: underline;
+  text-shadow:3px 3px #FFE4C4;
+}
+p,li{
+  color:orange;
+  font-weight:550;
+}
+li{
+  font-style:oblique;
+  line-height:200%;
+  text-indent:20px;
+}
