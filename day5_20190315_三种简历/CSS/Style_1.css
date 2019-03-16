@@ -1,0 +1,22 @@
+﻿
+
+a:link{color:blue;}
+a:visited{color:blue;}
+
+.s1
+{
+	display:block;
+	margin:0px 10px 20px 0px;
+	font-weight:bold;
+	float:left;
+	}
+.s2
+{	
+	display:block;
+	margin:0px 30px 20px 0px;
+	float:left;
+	}	
+	
+div
+{	clear:both;
+	}
