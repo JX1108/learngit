@@ -1,0 +1,102 @@
+
+
+<body>
+  <div>
+    <h1>简历</h1>
+    <section class="s1">
+      <div>
+        <p>姓名：小星星</p>
+        <p>联系方式：166666666</p>
+        <p>邮箱：5688566555@126.com</p>
+      </div>
+    </section>
+    
+    <section class="s2">
+      <div>
+        <h3>教育经历</h3>
+        <p>
+          <span>2013-2017</span>
+          <span>百度前端学院</span>
+          <span>本科</span>
+        </p>
+        <p>
+          <span>2018-至今</span>
+          <span>百度前端学院</span>
+          <span>研究生</span>
+        </p>
+      </div>
+    </section>
+    
+    <section class="s3">
+      <div>
+        <h3>项目经历</h3>
+        <p>
+          <li>
+          <span>项目一：小程序开发</span>
+          <span>2018.9-2019.2</span>
+          <span>主要负责人</span>
+          <span>在xx项目中负责了xxx部分</span>
+          </li>
+          <li>
+          <span>项目二：另一个小程序开发</span>
+          <span>2018.9-2019.2</span>
+          <span>主要负责人</span>
+          <span>在xx项目中负责了xxx部分</span>
+          </li>
+        </p>
+      </div>
+    </section>
+    
+    <section class="s4">
+      <h3>个人主页</h3>
+      <p> <a href="https://weibo.com/">微博：小星星的微博</a></p>      
+      <p> <a href="https://zhihu.com/">知乎：小星星的知乎</a></p>
+    </section>       
+  </div>
+</body>        
+        
+    
+
+*{
+  text-align:center;
+  font-famliy:arial;
+  
+}
+h1 {
+  font-size:32px;
+  background-color:orange;
+  background-image:url(http://seopic.699pic.com/photo/40006/8101.jpg_wh1200.jpg);
+  background-position:0 100px;
+  background-repeat:repeat;
+  background-clip:border-box;
+   
+  /*background:url(http://seopic.699pic.com/photo/40006/8101.jpg_wh1200.jpg) no-repeat ;*/
+ 
+  border:1px solid black;
+}
+
+p span{color:black;}
+li span{color:blue;}
+
+h3{
+  text-decoration: underline;
+  text-shadow:4px 5px 4px grey;
+}
+p,li{
+  color:orange;
+  font-weight:550;
+}
+li{
+  font-style:oblique;
+  line-height:200%;
+  text-indent:20px;
+  list-style: circle inside;
+}
+
+a:link {color:#F00;}
+a:visited {color:rgba(255,0,0,0.5);}
+a:hover {color:black;}
+a:active {color:blue;}
+
+
+

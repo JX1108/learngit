@@ -1,0 +1,22 @@
+百度前端学院第二天http://ife.baidu.com/course/detail/id/36
+任务：给自己做一个在线简历
+
+<html>
+  <head></head>
+  <title>简历</title>
+ <body>
+  <h1>简历</h1>
+  <h3>姓名：小星星</h3>
+  <h4>学历：百度前端学院 本科</h4>
+  <h4>项目经历：</h4>
+   <div>项目A  2018.1——2018.9 项目负责人</div>
+     <li>基于HTML、CSS进行页面编写；</li>
+     <li>使用JS添加动画</li>
+   <div>项目B  2019.1——至今 项目参与者</div>
+     <li>基于HTML、CSS进行页面编写；</li>
+     <li>使用JS添加动画</li>
+   <h4>获奖经历：</h4>
+     <li>XXX奖学金  2018.9</li>
+     <li>XXX奖学金  2019.1</li>
+ </body>
+</html>
