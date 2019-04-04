@@ -1,0 +1,21 @@
+﻿body 
+{
+	margin:0;
+}
+
+#main
+{
+	overflow:hidden;
+	}
+
+#left
+{    	
+	 float:left;
+	 background:blue;
+	 width:200px;
+}
+	 
+#right
+{    margin-left:200px;
+	 background:orange;
+}
