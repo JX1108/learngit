@@ -1,0 +1,13 @@
+﻿
+#left
+{
+	overflow:auto;
+	background:blue;
+	margin-right:200px;
+	}
+#right
+{
+	float:right;
+	margin-left:0;
+	width:200px;
+	background:orange;}	
