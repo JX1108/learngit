@@ -1,0 +1,31 @@
+﻿body 
+{
+	margin:0;
+	height:100%;
+}
+
+#left,#right
+{
+	position:absolute;
+	top:0;
+	width:200px;
+	height:100%;}
+	
+#left
+{
+	left:0;
+	background:#a0b3d6;
+	}
+
+#right
+{
+	right:0;
+	background:#a0b3d6;
+	}
+
+#main
+{
+	height:50%;
+	margin:0 210px;
+	background:#ffe6b8;
+	}
