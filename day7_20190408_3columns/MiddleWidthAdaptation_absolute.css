@@ -1,8 +1,9 @@
-﻿body 
+﻿html,body 
 {
 	margin:0;
 	height:100%;
 }
+/*需要将html的高度也设置为100%，列高才不会受限制*/
 
 #left,#right
 {
@@ -25,7 +26,7 @@
 
 #main
 {
-	height:50%;
-	margin:0 210px;
+	height:100%;
+	margin:0 200px;
 	background:#ffe6b8;
 	}

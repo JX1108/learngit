@@ -1,0 +1,27 @@
+﻿html,body 
+{
+	margin:0;
+	height:100%;
+}
+
+#left,#main
+{
+	position:absolute;
+	width:200px;
+	height:100%;
+	}
+
+#left
+{
+	left:0;
+	background:#a0b3d6;}
+#main
+{
+	left:200px;
+	background:#ffe6b8;
+	}
+#right
+{
+	margin-left:400px;
+	height:100%;
+	background:#a0b3d6;}

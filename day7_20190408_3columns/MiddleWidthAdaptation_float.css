@@ -1,0 +1,32 @@
+﻿html,body 
+{
+	margin:0;
+	height:100%;
+}
+
+#left
+{
+	float:left;
+	background:#a0b3d6;
+	}
+
+#right
+{
+	float:right;
+	background:#a0b3d6;
+	}
+
+#main
+{
+	width:100%;
+	height:100%;
+	background:#ffe6b8;
+		}
+	
+
+#left,#right
+{
+	width:200px;
+	height:100%;
+	
+	}

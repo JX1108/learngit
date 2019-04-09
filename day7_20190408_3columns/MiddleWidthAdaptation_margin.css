@@ -1,22 +1,40 @@
-﻿body 
+﻿html,body 
 {
 	margin:0;
 	height:100%;
 }
 #left
 {
-	
+	margin-left:-100%;
 	background:#a0b3d6;
 	}
 
 #right
 {
-	
+	margin-left:-200px;
 	background:#a0b3d6;
 	}
 
 #main
 {
+	float:left;
+	width:100%;
+	height:100%;
+		}
+	
 
+#main #content
+{
+	margin:0 210px;
 	background:#ffe6b8;
+	height:100%;
+	}
+/*#main #content:中间带空格表示的是包含关系，逗号表示并列*/	
+
+#left,#right
+{
+	width:200px;
+	height:100%;
+	float:left;
+	
 	}

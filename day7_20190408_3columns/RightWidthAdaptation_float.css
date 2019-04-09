@@ -1,0 +1,25 @@
+﻿html,body 
+{
+	margin:0;
+	height:100%;
+}
+
+#left,#main
+{
+	float:left;
+	width:100px;
+	height:100%;
+	}
+
+#left
+{
+	background:#a0b3d6;}
+#main
+{
+	background:#ffe6b8;
+	}
+#right
+{
+	width:100%;
+	height:100%;
+	background:#a0b3d6;}
