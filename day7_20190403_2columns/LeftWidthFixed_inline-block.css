@@ -1,0 +1,26 @@
+﻿body 
+{
+	box-sizing:border-box;
+	margin:0;
+}
+#main
+{
+	font-size:0;
+	/*此处为了消除空格的影响，因此在下面需要重置设置字体大小*/
+}
+#left,#right
+{    display:inline-block;
+	 vertical-align:top;
+	 font-size:14px;
+	}
+
+#left
+{    	
+	 background:blue;width:200px;
+}
+	 
+#right
+{    
+	 background:orange;
+	 width: calc(100% - 200px);
+}

@@ -1,0 +1,25 @@
+﻿body 
+{
+	margin:0;
+}
+#main
+{
+	overflow:auto;
+	box-sizing:content-box;
+}
+#left,#right
+{
+	float:left;
+	box-sizing:border-box;
+}
+
+#left
+{    	
+	 background:blue;width:200px;
+}
+	 
+#right
+{    
+	 background:orange;
+	 width: calc(100% - 200px);
+}

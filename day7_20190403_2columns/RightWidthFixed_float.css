@@ -1,0 +1,18 @@
+﻿#main
+{
+	overflow:hidden;
+	}
+#left
+{
+	box-sizing:border-box;
+	float:left;
+	background:blue;
+	width: calc(100% - 200px);
+	
+	}
+#right
+{
+	box-sizing:border-box; /*需要设置盒模型*/
+	float:right;
+	width:200px;
+	background:orange;}	
