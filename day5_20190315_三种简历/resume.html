@@ -2,13 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>简历</title>
-    <link rel="stylesheet" href="CSS/Style_3.css" >
+    <link rel="stylesheet" href="CSS/Style_2.css" >
 </head>
 
 <body>
     <div id="content">
         <div id="left">
             <h1>简历</h1>
+            <button id="display">点我呀</button>
+            <p id="title_content"></p>
         </div>
             
         <div id="right">
@@ -99,3 +101,8 @@
         
 </body>
 </html>
+
+<script>
+    document.getElementById("display").onclick = function() {
+        document.getElementById("title_content").innerText="每天都在人生的旅途中";};
+</script>
