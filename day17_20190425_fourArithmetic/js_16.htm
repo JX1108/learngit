@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+    
+        var num1 = document.getElementById("first-number");
+        var num2 = document.getElementById("second-number");
+        var add_btn = document.getElementById("add-btn");
+        var minus_btn = document.getElementById("minus-btn");
+        var times_btn = document.getElementById("times-btn");
+        var divide_btn = document.getElementById("divide-btn");
+        
+        if(typeof(num1.value)!= "number" )
+        {
+            console.log("it it not a number");
+        }
+        if(typeof(num2.value)!= "number" )
+        {
+            console.log("it it not a number");
+        }
+        
+        add_btn.onclick=function(){
+            result.innerHTML = Number(num1.value) + Number(num2.value);
+        }
+        minus_btn.onclick = function(){
+            result.innerHTML = Number(num1.value) - Number(num2.value)
+        }
+        times_btn.onclick=function(){
+            result.innerHTML = Number(num1.value) * Number(num2.value);
+        }
+        divide_btn.onclick=function(){
+            if(num2.value == 0)
+            {
+                console.log("the divisor cannot be zero")
+            }
+            else
+            {
+                result.innerHTML = Number(num1.value) / Number(num2.value);
+            }                     
+        } 
+    </script>
+</body>
+</html>
