@@ -11,6 +11,7 @@
             <h1>简历</h1>
             <button id="display">点我呀</button>
             <p id="title_content"></p>
+            <p id="greetings">xiao</p>
         </div>
             
         <div id="right">
@@ -104,5 +105,19 @@
 
 <script>
     document.getElementById("display").onclick = function() {
-        document.getElementById("title_content").innerText="每天都在人生的旅途中";};
+        document.getElementById("title_content").innerText="每天都在人生的旅途中";
+    }
+ 
+    var now = new Date().toTimeString();
+    console.log(now);
+    if(now >= 6 && now <= 12 ){
+        document.getElementById("greetings").innerText="早上好";
+    }
+    else if (now >=12 && now <= 18){
+        document.getElementById("greetings").innerText="下午好";
+    }
+    else {
+        document.getElementById("greetings").innerText="晚上好";
+   }
+ //   greeting.innerText = new Date();
 </script>
