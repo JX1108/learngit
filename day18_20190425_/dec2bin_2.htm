@@ -51,21 +51,25 @@ function dec2bin(decNumber) {
     trans_btn.onclick = function(){
         var number = parseInt(dec_Number.value);
         var bit = parseInt(bin_bit.value);
-        var bin_result = dec2bin(number);
-    
+        var bin_result = dec2bin(number).toString();
+       
+        var bin_long = bin_result.length;
+        console.log(number,"转化后的位数长度是：",bin_long);
         
-        if( bin_result.length > bit){
+        if( bin_long >= bit){
             result.innerHTML = bin_result;
             console.log("输入位数小于实际长度");
         }
         else{
-            
-            
-            
+            for(var i=0;i<bit-bin_long;i++){
+            bin_result = "0" + bin_result;
+            console.log("每次补一个0");
+            result.innerHTML = bin_result;
+            }                       
        } 
         
         
-      //  result.innerHTML = dec2bin(number);
+        //result.innerHTML = bin_result;
     };
     
     
