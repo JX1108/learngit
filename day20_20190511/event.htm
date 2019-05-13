@@ -57,6 +57,11 @@
 
     <p class="color-picker2"></p>
 
+<!---任务5---->
+<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+<button id="fade-btn">淡出</button>
+
+
 <script>
 //任务一
 var btn = document.getElementById("submit-btn");
@@ -112,6 +117,57 @@ u.onclick = function(ev){
     p.style.color = c;
 }
           
+//任务五 淡入淡出
+
+window.onload = function(){
+    var fadeObj = document.querySelector("#fade-obj");
+    var fadeBtn = document.querySelector("#fade-btn");
+    var alpha = 100;
+    var speed = 2;
+    var timer = null;
+
+    fadeBtn.onclick = function(){
+        if(fadeBtn.innerHTML == "淡出"){
+            fadeBtn.innerHTML = "不可点击";
+            console.log("zhu");
+            startRun(0);
+        }
+        
+        if(fadeBtn.innerHTML == "淡入"){
+            fadeBtn.innerHTML = "不可点击";
+            console.log("zhu");
+            startRun(100);
+            
+        }
+    }
+    function startRun(target){
+        clearInterval(timer);
+        timer = setInterval(function(){
+            if(target > alpha){
+             speed = 2;
+            }
+            else{
+             speed = -2;
+            }   
+            if(alpha == target){
+             clearInterval(timer);               
+            }
+            else{
+             alpha = alpha + speed;
+             fadeObj.style.filter = 'alpha(opacity = '+alpha+')';
+             fadeObj.style.opacity = alpha/100;
+             console.log(alpha);
+            } 
+            
+             if(alpha == 100 && target == 100){
+              fadeBtn.innerHTML = "淡出";
+             }    
+            if(alpha == 0 && target == 0){
+              fadeBtn.innerHTML = "淡入";
+             }                                        
+        },30);             
+    }
+}
 
 </script>
 </body>
