@@ -23,6 +23,8 @@
     var list = document.querySelectorAll("button");
     var radio_a = document.querySelector("#radio-a");
     var radio_b = document.querySelector("#radio-b");
+    var result = document.querySelector("#result");
+    
     var a = false, b = false;
     var numA = document.querySelector("#num-a");
     var numB = document.querySelector("#num-b");
@@ -32,8 +34,8 @@
             
         list[i].onclick = function(e){ 
            var t = e.target;
-           var numberA = parseInt(numA.value);
-           var numberB = parseInt(numB.value);
+           var numberA = numA.value;
+           var numberB = numB.value;
            
            if(radio_a.checked){
                a = true;}
@@ -42,26 +44,23 @@
            if(radio_b.checked){
                b = true;} 
             else b = false;
-            
-           console.log("a",a);
-           console.log("b",b);
-           
+                       
            switch(t.innerHTML){
                case "判断当前选中的输入框输入内容是否为数字":
                    if(a){
-                       if(parseFloat(numberA).toString() != "NaN"){                                          
-                           alert("a is a number");
+                       if(isNaN(numberA)|| numberA=="" ){                                          
+                           alert("a is not a number");
                         }                    
                        else {                          
-                           alert("a is not a number");
+                           alert("a is a number");
                         }                      
                    }
                    if(b){
-                       if(parseFloat(numberB).toString() != "NaN"){                                          
-                           alert("b is a number");
+                       if(isNaN(numberB) || numberB=="" ){                                          
+                           alert("b is not a number");
                         }                    
                        else {                          
-                           alert("b is not a number");
+                           alert("b is a number");
                         }                      
                    }           
                    break;
@@ -69,23 +68,43 @@
                case "把 A 四舍五入为 B 个小数位数的数字":
                    console.log(list[1].innerHTML);
                    break;
-               case 2:
-                   console.log(list[2].innerHTML);
+               case "当前选中数字的绝对值":
+                   if(a){
+                       result.innerHTML = Math.abs(numberA);
+                   }
+                   if(b){
+                       result.innerHTML = Math.abs(numberB);                 
+                   }
                    break;
-               case 3:
-                   console.log(list[3].innerHTML);
+               case "对当前选中的数字进行上舍入":
+                   if(a){                   
+                       result.innerHTML = Math.ceil(numberA);
+                   }
+                   if(b){
+                       result.innerHTML = Math.ceil(numberB);
+                   }
                    break;
-               case 4:
-                   console.log(list[4].innerHTML);
+               case "对当前选中的数字进行下舍入":
+                   if(a){                   
+                       result.innerHTML = Math.floor(numberA);
+                   }
+                   if(b){
+                       result.innerHTML = Math.floor(numberB);
+                   }
                    break;
-               case 5:
-                   console.log(list[5].innerHTML);
+               case "把当前选中的数字四舍五入为最接近的整数":
+                   if(a){                   
+                       result.innerHTML = Math.round(numberA);
+                   }
+                   if(b){
+                       result.innerHTML = Math.round(numberB);
+                   }
                    break;
-               case 6:
-                   console.log(list[6].innerHTML);
+               case "返回 A 和 B 中的最高值":
+                       result.innerHTML = Math.max(numberA,numberB);
                    break;
-               case 7:
-                   console.log(list[7].innerHTML);
+               case "返回 A 和 B 中的最低值":
+                       result.innerHTML = Math.min(numberA,numberB);
                    break;
            }
         }
