@@ -44,6 +44,24 @@
            if(radio_b.checked){
                b = true;} 
             else b = false;
+            
+            //判断是否为数字
+                   if(a){
+                       if(isNaN(numberA)|| numberA=="" ){                                          
+                           console.log("a is not a number");
+                        }                    
+                       else {                          
+                           console.log("a is a number");
+                        }                      
+                   }
+                   if(b){
+                       if(isNaN(numberB) || numberB=="" ){                                          
+                           console.log("b is not a number");
+                        }                    
+                       else {                          
+                           console.log("b is a number");
+                        }                      
+                   }           
                        
            switch(t.innerHTML){
                case "判断当前选中的输入框输入内容是否为数字":
@@ -66,7 +84,7 @@
                    break;
                    
                case "把 A 四舍五入为 B 个小数位数的数字":
-                   console.log(list[1].innerHTML);
+                   result.innerHTML = (numberA*1).toFixed(numberB);
                    break;
                case "当前选中数字的绝对值":
                    if(a){
